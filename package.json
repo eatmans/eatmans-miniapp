@@ -1,0 +1,74 @@
+{
+	"name": "eatmans-miniapp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "eatmans",
+	"license": "ISC",
+	"dependencies": {
+		"dayjs": "^1.11.4",
+		"uni-read-pages": "^1.0.5",
+		"uni-simple-router": "^2.0.7",
+		"uview-ui": "^1.8.4"
+	},
+	"uni-app": {
+		"scripts": {
+			"h5-dev": {
+				"title": "H5-开发服",
+				"BROWSER": "Chrome",
+				"env": {
+					"UNI_PLATFORM": "h5",
+					"BASE_API_URL": "http://dev.com"
+				},
+				"define": {
+					"MP-DINGTALK": true
+				}
+			},
+			"h5-pro": {
+				"title": "H5-正式服",
+				"BROWSER": "Chrome",
+				"env": {
+					"UNI_PLATFORM": "h5",
+					"BASE_API_URL": "http://pro.com"
+				},
+				"define": {
+					"MP-DINGTALK": true
+				}
+			},
+			"weixin-dev": {
+				"title": "微信小程序-开发服",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"BASE_API_URL": "http:/127.0.0.1:18216"
+				},
+				"define": {
+					"MP-DINGTALK": true
+				}
+			},
+			"weixin-test": {
+				"title": "微信小程序-测试服",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"BASE_API_URL": "http://test.com"
+				},
+				"define": {
+					"MP-DINGTALK": true
+				}
+			},
+			"weixin-pro": {
+				"title": "微信小程序-正式服",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"BASE_API_URL": "https://school.rjxh.cloud"
+				},
+				"define": {
+					"MP-DINGTALK": true
+				}
+			}
+		}
+	}
+}
